@@ -70,7 +70,7 @@ class FiscalCodeForm extends React.Component {
     }
 
     provinceChanged = (e) => {
-        const { _, value } = e.target
+        const  value = e.target.value
         this.setState(s => ({ ...s, birthProv: value }))
         console.log("Provincia cambiata a", value)
         this.loadCities(value)
